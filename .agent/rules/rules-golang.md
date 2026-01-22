@@ -1,7 +1,3 @@
----
-trigger: always_on
----
-
 # Go (Golang) Development Rules
 
 > Patterns, conventions, and best practices for Go development in the AntiGravity ecosystem.
