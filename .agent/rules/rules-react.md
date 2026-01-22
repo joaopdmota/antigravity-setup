@@ -1,7 +1,3 @@
----
-trigger: always_on
----
-
 # 🚀 React & Next.js Enterprise Standards
 
 > Patterns, conventions, and best practices for engineering scalable, high-performance interfaces with React and Next.js.
