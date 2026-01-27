@@ -1,3 +1,7 @@
+---
+trigger: always_on
+---
+
 # 🚀 React & Next.js Enterprise Standards
 
 > Patterns, conventions, and best practices for engineering scalable, high-performance interfaces with React and Next.js.
@@ -108,6 +112,22 @@ Use `useState` or `useReducer` for state restricted to a single component.
 
 **Memoization:**  
 Use `useMemo` and `useCallback` only when necessary (heavy processing or stable effect dependencies).
+
+## 🧠 Cognitive Load & Logic Extraction
+
+**Logic in useEffect:**  
+**Prohibited.** `useEffect` should only be used for synchronization that cannot be extracted (e.g., event listeners).  
+Complex business logic, data fetching, or subscriptions **MUST** be extracted to custom hooks (`useMatchSession`, `useWatchlistSync`).
+
+**Component Size:**  
+Soft limit of **150 lines**. If a component exceeds this, it likely has too many responsibilities.  
+Split into smaller sub-components or extract logic to hooks.
+
+**God Components:**  
+Avoid components that "know too much". Separate Data Fetching from UI Rendering.
+
+**One Hook per Feature:**  
+Group related state and effects into a single custom hook (e.g., `useMatchLogic` instead of 5 separate `useState` + 3 `useEffect`).
 
 **Code Splitting:**  
 Use `next/dynamic` or `React.lazy` / `Suspense` to load heavy components only when needed.
