@@ -48,15 +48,33 @@ Each implementation ensures:
 ```text
 .agent/
 ├── rules/          # Project-specific coding standards (React, TS, Styling)
-└── workflows/      # Orchestration logic for specialized agents
-    ├── nexus.md    # Main orchestrator configuration
-    └── subagents/  # Specific logic for planner, reviewer, and task-manager
+├── skills/         # Domain experts taught to apply the rules (React Expert, System Architect...)
+└── workflows/      # Orchestration logic for slash commands (/planner, /reviewer...)
+    ├── nexus.md    # Main orchestrator
+    ├── planner.md  # Strategic planning
+    └── ...
 ```
 
 ## 📊 Success Metrics
 - **Planning time:** ~5-10 min for complex features.
 - **Review quality:** 100% adherence to project-defined rules.
 - **Dev Velocity:** Increased by automating repetitive boilerplate and review tasks.
+
+## 🔄 Maintaining Agents (Sync)
+
+To keep your agents updated with the latest organizational standards (from `antigravity-setup`), you can add this to your `Makefile`:
+
+```makefile
+.PHONY: agents
+agents:
+	@bash -c "$$(curl -fsSL https://raw.githubusercontent.com/joaopdmota/antigravity-setup/main/scripts/sync-agents.sh)" 
+```
+
+Then simply run:
+
+```bash
+make agents
+```
 
 ---
 
