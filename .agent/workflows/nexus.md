@@ -20,7 +20,8 @@ For each new implementation, you orchestrate through **4 sequential phases**:
 
 ### Phase 1: 📋 Strategic Planning
 **Responsible Agent:** `/planner`
-**Purpose:** Create the detailed `implementation_plan.md`.
+**Purpose:** Create the detailed `implementation_plan.md`. 
+**Mandatory:** Before starting the audit, read all relevant `SKILL.md` files in `.agent/skills/` to align with the project's specialized expertise.
 
 ---
 
