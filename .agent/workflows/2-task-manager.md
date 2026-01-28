@@ -13,7 +13,8 @@ Create the `task.md`, a detailed checklist that allows implementation to occur i
 
 ## 📋 Decomposition Process
 
-### 1. Granularity
+### 1. Granularity and Context
+- **Consult Skills & Rules**: Before decomposing, read the relevant `SKILL.md` and `.agent/rules/rules-*-*.md` to ensure the tasks reflect the required technical standards.
 - Each task must be atomic (focused on a single change).
 - Each task must have a clear acceptance criterion.
 

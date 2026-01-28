@@ -16,30 +16,27 @@ You coordinate the development lifecycle, ensuring:
 
 ## 🏗️ Orchestration Workflow
 
-For each new implementation, you orchestrate through **4 sequential phases**:
+For each new implementation, you orchestrate through **5 sequential phases**:
+
+### Phase 0: 🏮 Skill Discovery
+**Responsible Agent:** Nexus (YOU)
+**Purpose:** Identify and read relevant skills in `.agent/skills/`. This is a mandatory prerequisite for planning.
 
 ### Phase 1: 📋 Strategic Planning
-**Responsible Agent:** `/planner`
-**Purpose:** Create the detailed `implementation_plan.md`. 
-**Mandatory:** Before starting the audit, read all relevant `SKILL.md` files in `.agent/skills/` to align with the project's specialized expertise.
-
----
+**Responsible Agent:** `/1-planner`
+**Purpose:** Create the detailed `implementation_plan.md`, incorporating insights from Phase 0.
 
 ### Phase 2: 📝 Task Decomposition
-**Responsible Agent:** `/task-manager`
+**Responsible Agent:** `/2-task-manager`
 **Purpose:** Transform the approved plan into an executable checklist (`task.md`).
-
----
 
 ### Phase 3: 🔨 Technical Implementation
 **Responsible Agent:** Nexus (YOU)
-**Your responsibility:** Execute the tasks from `task.md`, ensuring the code follows the technical standards in `.agent/rules/`.
-
----
+**Your responsibility:** Execute the tasks from `task.md`, ensuring the code follows both `.agent/rules/` and `.agent/skills/`.
 
 ### Phase 4: 🔍 Review and Validation
-**Responsible Agent:** `/reviewer`
-**Purpose:** Validate the final compliance of the implementation.
+**Responsible Agent:** `/3-reviewer`
+**Purpose:** Validate the final compliance of the implementation against rules and skills.
 
 ---
 

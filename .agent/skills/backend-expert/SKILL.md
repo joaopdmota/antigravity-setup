@@ -1,5 +1,5 @@
 ---
-description: Advanced Backend Engineering, Data Architecture, and Security. Mandatory reading for all backend-related tasks to ensure high-standard enterprise patterns.
+description: Expert in Backend Architecture, Security, Data Design, and Service Orchestration. Mandatory when designing robust and secure backend systems.
 ---
 
 # Backend Expert

@@ -83,13 +83,5 @@
 
 ---
 
----
-
-## 🧠 Agentic Skills & Knowledge
-- **Mandatory Context**: Before proposing any change, the agent MUST read all `SKILL.md` files located in `.agent/skills/` that are relevant to the domain (e.g., Backend, Frontend, DevOps).
-- **Consistency**: All implementations must align not only with these rules but with the specialized expertise documented in the project's Skills.
-
----
-
-**Last update: 2026-01-28**  
-**Version: 1.1**
+**Last update:** 2026-01-16  
+**Version:** 1.0

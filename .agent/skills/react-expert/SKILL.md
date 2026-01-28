@@ -1,5 +1,5 @@
 ---
-description: Expert in React, Next.js, and UI Styling standards. Mandatory reading for all frontend tasks to ensure premium and scalable interfaces.
+description: Expert in React, Next.js, and UI Styling standards. Mandatory when implementing frontend features.
 ---
 
 # React Expert
