@@ -1,5 +1,5 @@
 ---
-description: Expert in Git, advanced version control workflows, collaboration standards, and history management. Use when managing repositories, code integration, or CI/CD flows.
+description: Expert in Git, advanced version control workflows, collaboration standards, and history management. Mandatory reading for all repository management, integration, and CI/CD tasks.
 ---
 
 # Git Expert

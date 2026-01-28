@@ -1,5 +1,5 @@
 ---
-description: Expert in TypeScript, advanced type engineering, Zod, and ecosystem best practices. Use when building or scaling TypeScript projects.
+description: Expert in TypeScript, advanced type engineering, Zod, and ecosystem best practices. Mandatory reading for all TypeScript-related tasks to ensure type safety and scalability.
 ---
 
 # TypeScript Expert

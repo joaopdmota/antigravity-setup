@@ -1,5 +1,5 @@
 ---
-description: Expert in Go (Golang), concurrency patterns, performance optimization, and idiomatic engineering. Use when writing, reviewing, or refactoring Go code.
+description: Expert in Go (Golang), concurrency patterns, performance optimization, and idiomatic engineering. Mandatory reading for all Go-related tasks to ensure idiomatic and high-performance code.
 ---
 
 # Golang Expert

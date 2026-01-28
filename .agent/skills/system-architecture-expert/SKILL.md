@@ -1,5 +1,5 @@
 ---
-description: Expert in Distributed Systems, Cloud-Native Architecture, Observability, and Scalability. Use for high-level technical direction and system-level design.
+description: Expert in Distributed Systems, Cloud-Native Architecture, Observability, and Scalability. Mandatory reading for system-level design and architectural decisions.
 ---
 
 # System Architecture Expert
