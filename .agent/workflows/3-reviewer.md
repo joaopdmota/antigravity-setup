@@ -41,6 +41,15 @@ The result should be a `code_review.md` containing:
 - **Improvement Suggestions**: Non-blocking adjustments.
 - **Critical Issues**: Mandatory adjustments before completion.
 
+## 🧠 Memory Update
+
+**After the review:**
+- If **critical issues** are found (security vulnerabilities, major architectural violations), update `.agent/memory.md`:
+  - Add to "Lessons Learned" section
+  - Document the mistake, root cause, and prevention strategy
+- If **new anti-patterns** are discovered, document them in memory
+- This ensures the same issues are never repeated in future implementations
+
 ---
 
 **Version:** 2.0 (Generic Edition)  

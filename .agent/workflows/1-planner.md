@@ -14,11 +14,12 @@ Create the `implementation_plan.md` that will serve as a guide for implementatio
 ## 📋 Planning Process
 
 ### 1. Requirement and Context Analysis
+- **Read Memory First**: Check `.agent/memory.md` for past decisions, lessons learned, and project context.
 - Understand the user's ultimate goal.
 - Analyze the existing codebase to identify where changes should occur.
 - **Consult Skills**: Check `.agent/skills/` and read relevant `SKILL.md` files. This is mandatory.
 - **Consult Rules**: Check `.agent/rules/` and read relevant `rules-tech-*.md` and `rules-soft-*.md`.
-- **Citations**: Explicitly mention in the plan which skills and rules were used to design the solution.
+- **Citations**: Explicitly mention in the plan which skills, rules, and memory insights were used to design the solution.
 
 ### 2. Implementation Strategy
 - Define the affected layers (Data, Domain, API, UI).
