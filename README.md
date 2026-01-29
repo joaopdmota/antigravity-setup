@@ -171,9 +171,6 @@ To keep your agents updated with the latest organizational standards (from `anti
 .PHONY: agents
 agents:
 	@bash -c "$$(curl -fsSL https://raw.githubusercontent.com/joaopdmota/antigravity-setup/main/scripts/sync-agents.sh)"
-	@git add .agent -f
-	@git ls-files .agent/ | xargs -I {} git update-index --skip-worktree {}
-	@echo ">> .agent/ synced and marked as skip-worktree ✅"
 ```
 
 Then simply run:
