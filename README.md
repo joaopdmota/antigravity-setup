@@ -88,10 +88,14 @@ AntiGravity is built on five interconnected systems that work together to create
 **Example:** When building a REST API, the Backend Expert skill provides guidance on error handling and validation.
 
 ### 3. 🔄 Workflows (`.agent/workflows/`)
-**Orchestrated processes** for complex tasks using slash commands.
-- `/planner` - Strategic planning and architecture
-- `/task-manager` - Task breakdown and organization
-- `/reviewer` - Code quality audits
+**Orchestrated processes** for complex tasks.
+
+#### Nexus Orchestration
+- **`/nexus`** - Complete feature development lifecycle (planning → implementation → review)
+
+#### Standalone Tools
+- **`/audit`** - Comprehensive project health check
+- **`/code-review`** - Review uncommitted changes automatically
 
 **Example:** `/nexus` orchestrates the entire feature development lifecycle.
 
