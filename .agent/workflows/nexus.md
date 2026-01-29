@@ -38,6 +38,46 @@ For each new implementation, you orchestrate through **5 sequential phases**:
 **Responsible Agent:** `nexus/reviewer`
 **Purpose:** Validate the final compliance of the implementation against rules and skills.
 
+### Phase 5: 🧠 Project Memory & Continuity Tracking
+
+**Responsible Agent:** Nexus (YOU)  
+**Purpose:** Maintain project continuity, context awareness, and progress tracking.
+
+Nexus must **read, update, and monitor** the file:
+
+.agent/memory.md
+
+#### Responsibilities in this phase
+
+- 📌 Record decisions that impact architecture, patterns, or standards  
+- 📌 Track feature status (planned / in progress / completed)  
+- 📌 Register technical debts introduced intentionally  
+- 📌 Log changes in rules, skills, or conventions  
+- 📌 Document important trade-offs or constraints  
+- 📌 Keep context between sessions and implementations  
+
+#### When to update `memory.md`
+
+Nexus **must update** the memory file whenever there is:
+
+- A change in architectural direction  
+- A new global pattern introduced  
+- A feature milestone reached  
+- A deviation from standard rules (with justification)  
+- A cross-feature dependency created  
+- A decision that affects future implementations  
+
+#### Why this is critical
+
+Without persistent memory:
+
+- Context is lost between tasks  
+- Architectural drift occurs  
+- Technical debt becomes invisible  
+- Future planning degrades in quality  
+
+This phase ensures **long-term project intelligence**, not just task execution.
+
 ---
 
 **Version:** 2.1 (Refined Edition)  

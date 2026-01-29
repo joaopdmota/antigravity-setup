@@ -178,6 +178,52 @@ Enforce `jsx-a11y` via ESLint.
 **Integration:**  
 Validate the data flow between components and hooks within the same feature.
 
+## 🔑 Keys, Indexes and `Math.random()`
+
+**Absolute Rule:**  
+❌ It is **forbidden** to use the array `index` or `Math.random()` as a `key` in lists.
+
+### 🚫 What NOT to do
+
+```tsx
+{items.map((item, index) => (
+  <Card key={index} />         // ❌ Wrong
+))}
+
+{items.map(item => (
+  <Card key={Math.random()} /> // ❌ Even worse
+))}
+
+
+❗ Why this is critical
+
+React uses key to identify elements between renders (reconciliation).
+If the key changes, React cannot preserve component identity, which causes:
+
+loss of internal state
+
+inputs losing focus
+
+broken animations
+
+unnecessary re-renders
+
+visual bugs that are hard to reproduce
+
+Math.random() creates permanent instability.
+Using index breaks whenever there is filtering, sorting, insertion, or removal.
+
+✅ Correct approach
+
+A key must be:
+
+Unique
+
+Stable between renders
+
+Based on the real identity of the data
+
+
 ---
 
 ## 🚦 Decision Criteria
