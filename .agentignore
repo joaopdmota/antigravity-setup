@@ -1,0 +1,32 @@
+# AI Agent Ignore File
+# Specify files and directories that should be ignored by the AI agent.
+
+# Version control
+.git/
+
+# Dependencies
+node_modules/
+vendor/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Build and temporary files
+dist/
+build/
+out/
+.next/
+tmp/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Agent specific
+.agentignore
