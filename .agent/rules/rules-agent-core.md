@@ -29,11 +29,11 @@ These rules are non-negotiable and must be followed by every agent (Nexus, Plann
 
 ## 🏗️ Workflow Alignment
 
-- **Planner (/1-planner)**: Must read memory first, then cite relevant skills, rules, and memory insights in `implementation_plan.md`.
-- **Task Manager (/2-task-manager)**: Must ensure `task.md` includes verification steps from skills and rules.
-- **Nexus (YOU)**: Must verify implementation adheres to skills, rules, and memory lessons.
-- **Reviewer (/3-reviewer)**: Must use skills, rules, and memory as validation checklist. Must update memory if critical issues are found.
-- **Audit (/4-audit)**: Must perform comprehensive health check and update memory with findings.
+- **Planner Skill**: Must read memory first, then cite relevant skills, rules, and memory insights in `implementation_plan.md`.
+- **Task Manager Skill**: Must ensure `task.md` includes verification steps from skills and rules.
+- **Nexus Skill (YOU)**: Must verify implementation adheres to skills, rules, and memory lessons.
+- **Reviewer Skill**: Must use skills, rules, and memory as validation checklist. Must update memory if critical issues are found.
+- **Audit Skill**: Must perform comprehensive health check and update memory with findings.
 
 ## 🛑 Failure Condition
 

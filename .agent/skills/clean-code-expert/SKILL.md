@@ -1,5 +1,6 @@
 ---
-description: Expert in Code Quality, Refactoring, SOLID principles, and Naming. Mandatory for deep code reviews, structural improvements, and maintaining "craftsmanship" standards.
+name: "clean-code-expert"
+description: "Expert in Code Quality, Refactoring, SOLID principles, and Naming. Mandatory for deep code reviews, structural improvements, and maintaining 'craftsmanship' standards."
 ---
 
 # Clean Code Expert

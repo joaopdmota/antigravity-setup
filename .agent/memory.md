@@ -16,11 +16,20 @@
 **Example:**
 ```markdown
 ### Decision: Feature-Based Architecture
-**Date:** 2026-01-29
-**Context:** Project was growing and files were hard to locate
-**Decision:** Adopted vertical slice architecture
-**Rationale:** High cohesion, easy to remove features, clear boundaries
-**Consequences:** Requires discipline to avoid cross-feature dependencies
+**Date:** 2026-03-13
+**Context:** Project requires high cohesion and easy module removal for business domains.
+**Decision:** Adopted vertical slice (feature-based) architecture for all business modules.
+**Rationale:** Defined in `rules-tech-react.md` and `rules-architecture.md` as the gold standard for SaaS/Dashboard scale.
+**Consequences:** Requires strict discipline to avoid cross-feature imports; must use public APIs (index.ts).
+
+---
+
+### Decision: Nexus Orchestration Activation
+**Date:** 2026-03-13
+**Context:** Need for a centralized development lifecycle management following standard v1.20.5.
+**Decision:** Activated Nexus Orchestrator and established the 4-phase workflow (Planning, Task Decomposition, Execution, Audit).
+**Rationale:** Standard project requirement for consistency and quality as per AGENTS.md.
+**Consequences:** All future features must follow the strict workflow artifacts (plan, task, walkthrough).
 ```
 
 ---
@@ -51,12 +60,20 @@
 
 ## 🚨 Lessons Learned
 
-### Mistake: [Title]
-**Date:** YYYY-MM-DD  
-**What Happened:** Description of the error  
-**Root Cause:** Why it happened  
-**Solution:** How it was fixed  
-**Prevention:** How to avoid it in the future
+### Mistake: Missing 'name' field in Skill Frontmatter
+**Date:** 2026-03-13
+**What Happened:** Backend Expert skill was missing the `name` field, causing indexing warnings/failures.
+**Root Cause:** Inconsistent metadata during v1.20.5 migration.
+**Solution:** Added `name: "backend-expert"` to frontmatter.
+**Prevention:** Always verify SKILL.md frontmatter matches the [name, description] schema.
+
+---
+
+### Learning: Comprehensive Health Check
+**Issue:** Potential drift in agent rules/skills after system updates.
+**Diagnosis:** Audited `.agent/rules/` and `.agent/skills/` during Nexus activation.
+**Fix:** Sync'd skill metadata and verified rule consistency with `Nexus Standard`.
+**Metrics:** 100% of skills now have correct metadata; zero inconsistent core rules found.
 
 **Example:**
 ```markdown

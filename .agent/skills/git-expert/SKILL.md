@@ -1,5 +1,6 @@
 ---
-description: Expert in Git, advanced version control workflows, collaboration standards, and history management. Mandatory when managing repositories, code integration, or CI/CD flows.
+name: "git-expert"
+description: "Expert in Git, advanced version control workflows, collaboration standards, and history management. Mandatory when managing repositories, code integration, or CI/CD flows."
 ---
 
 # Git Expert

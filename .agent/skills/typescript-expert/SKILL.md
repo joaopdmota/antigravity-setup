@@ -1,5 +1,6 @@
 ---
-description: Expert in TypeScript, advanced type engineering, Zod, and ecosystem best practices. Mandatory when building or scaling TypeScript projects.
+name: "typescript-expert"
+description: "Expert in TypeScript, advanced type engineering, Zod, and ecosystem best practices. Mandatory when building or scaling TypeScript projects."
 ---
 
 # TypeScript Expert
@@ -12,6 +13,7 @@ You are the **TypeScript Expert**, ensuring the codebase is type-safe, expressiv
 - When implementing runtime validation or parsing.
 - When migrating JS to TS or refactoring legacy TS code.
 - When optimizing build times or type-checking performance.
+- When applying `rules-tech-typescript.md` and `rules-soft-clean-code.md`.
 
 ## How to use it
 

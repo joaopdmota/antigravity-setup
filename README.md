@@ -13,9 +13,9 @@ AntiGravity prevents "context drift" and "code rot" by using a primary orchestra
 The heart of the system. Nexus coordinates the entire workflow, manages communication, and leads technical implementation.
 
 ### 2. Specialized Sub-agents
-- **`/planner`**: Analyzes requirements and generates a comprehensive `implementation_plan.md`.
-- **`/task-manager`**: Breaks down approved plans into atomic, testable units in `task.md`.
-- **`/reviewer`**: Audits the code against strict quality, security, and architectural rules defined in `.agent/rules/`.
+- **Planner**: Analyzes requirements and generates a comprehensive `implementation_plan.md`.
+- **Task Manager**: Breaks down approved plans into atomic, testable units in `task.md`.
+- **Reviewer**: Audits the code against strict quality, security, and architectural rules defined in `.agent/rules/`.
 
 ## 🔄 The 4-Phase Workflow
 
@@ -24,13 +24,14 @@ Every feature implementation follows a strict sequence:
 ```mermaid
 graph TD
     A[USER REQUEST] --> B[Nexus]
-    B --> C{/planner}
+    A[USER REQUEST] --> B[Nexus]
+    B --> C{Planner Skill}
     C --> D[implementation_plan.md]
     D --> E[User Approval]
-    E --> F{/task-manager}
+    E --> F{Task Manager Skill}
     F --> G[task.md]
     G --> H[Nexus Building]
-    H --> I{/reviewer}
+    H --> I{Reviewer Skill}
     I --> J[Approval/Walkthrough]
     J --> K[COMPLETION]
 ```
@@ -87,15 +88,13 @@ AntiGravity is built on five interconnected systems that work together to create
 
 **Example:** When building a REST API, the Backend Expert skill provides guidance on error handling and validation.
 
-### 3. 🔄 Workflows (`.agent/workflows/`)
-**Orchestrated processes** for complex tasks.
+### 3. 🔄 Orchestration
+**Automated workflows** for complex tasks.
 
-#### Nexus Orchestration
-- **`/nexus`** - Complete feature development lifecycle (planning → implementation → review)
-
-#### Standalone Tools
-- **`/audit`** - Comprehensive project health check
-- **`/code-review`** - Review uncommitted changes automatically
+#### Nexus Ecosystem
+- **Nexus Skill** - Complete feature development lifecycle (planning → implementation → review)
+- **Planner Skill** - Strategy and technical planning
+- **Reviewer Skill** - Audit and validation
 
 **Example:** `/nexus` orchestrates the entire feature development lifecycle.
 
@@ -123,11 +122,7 @@ AntiGravity is built on five interconnected systems that work together to create
 .agent/
 ├── memory.md       # Persistent context and lessons learned
 ├── rules/          # Technical standards (React, TS, Go, Clean Code)
-├── skills/         # Domain experts (Backend, React, Architecture)
-├── tools/          # Scripts and utilities
-│   ├── README.md
-│   └── scripts/    # Automation scripts
-└── workflows/      # Slash commands (/planner, /reviewer, /nexus)
+└── skills/         # Orchestration & Experts (Nexus, Planner, Backend, React)
 .agentignore        # Files to exclude from agent context
 ```
 
@@ -159,12 +154,12 @@ New to AntiGravity? Here's your 5-minute start:
    - [AGENTS.md](AGENTS.md) - Master the workflow
    - [QUICKSTART.md](QUICKSTART.md) - Your first feature
 
-2. **Try a command:**
+2.  **State your goal:**
    ```
-   /planner Create a user authentication system
+   Nexus, create a user authentication system
    ```
 
-3. **Let the system guide you** through planning → tasks → implementation → review
+3.  **Let the system guide you** through planning → tasks → implementation → review
 
 
 ## 🔄 Maintaining Agents (Sync)

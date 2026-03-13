@@ -1,17 +1,21 @@
+# Agent Config
+root: .agent
+skills: .agent/skills
+
 # 🚀 AntiGravity Agents Guide: Mastering the Ecosystem
 
 You have built a specialized ecosystem of agents. To extract 100% of its potential, you must interact with it following the "AntiGravity Pro" workflow.
 
-## 🛠️ Slash Commands
+## 🧠 Autonomous Specialist Skills
 
-The heart of the system lies in the workflows within `.agent/workflows/`. You can call them at any time:
+With the v1.20.5 update, AntiGravity has moved from manual slash commands to an **Autonomous Skill-based ecosystem**. I now recognize your objectives and proactively invoke the necessary specialist skills from `.agent/skills/`.
 
-| Command | Agent | When to Use |
+| Specialist | Domain | Proactive Activity |
 | :--- | :--- | :--- |
-| **`/nexus`** | **Nexus** | The primary command. Use it to start any new feature or major refactor. It orchestrates the other sub-agents. |
-| **`/planner`** | **Planner** | Use when you want to discuss **strategy** or architecture before touching any code. It focuses on the `implementation_plan.md`. |
-| **`/task-manager`** | **Task Mgr** | Use to organize the backlog. If you have a plan but don't know where to start, it creates the checklist in `task.md`. |
-| **`/reviewer`** | **Reviewer** | Use **before merging** or finalizing a task. it will check the rules in `.agent/rules/` and point out flaws. |
+| **Nexus** | Orchestration | Coordinates the entire lifecycle and manages project memory. |
+| **Planner** | Strategy | Analyzes requirements and creates the `implementation_plan.md`. |
+| **Task Manager** | Organization | Decomposes plans into executable units in `task.md`. |
+| **Reviewer** | Audit | Validates code against rules and creates the `walkthrough.md`. |
 
 ---
 
@@ -19,20 +23,20 @@ The heart of the system lies in the workflows within `.agent/workflows/`. You ca
 
 To guarantee 100% quality, ask me to follow these phases:
 
-### 1. Strategic Phase (`/planner`)
-> **You say:** "/planner I want to add a real-time notification system."
-- **What happens:** I will analyze your Go/TS/React rules and create a detailed `implementation_plan.md`. **Do not settle for anything less than a solid plan here.**
+### 1. Strategic Phase (Planner)
+> **You say:** "I want to add a real-time notification system."
+- **What happens:** I autonomously invoke the **Planner** skill. I will analyze your rules and memory before creating a detailed `implementation_plan.md`. **Do not settle for anything less than a solid plan here.**
 
-### 2. Breakdown Phase (`/task-manager`)
-> **You say:** "/task-manager break this plan into micro-tasks."
-- **What happens:** The system creates a `task.md`. This prevents me (the agent) from getting lost in long tasks and ensures you track progress in real-time.
+### 2. Breakdown Phase (Task Manager)
+> **You say:** "Break this plan into micro-tasks."
+- **What happens:** I invoke the **Task Manager** skill to create a `task.md`. This prevents me from getting lost in long tasks and ensures you track progress in real-time.
 
 ### 3. Execution Phase (Nexus)
-- **What happens:** I execute the tasks from `task.md` one by one. The secret here is that I **always** read the `.agent/rules/` before each new file. You don't need to remind me to use HSL or Conventional Commits; the rules take care of that.
+- **What happens:** I execute the tasks from `task.md` one by one. **Autonomous flows** are now enabled by default (v1.20.5), meaning I will proactively manage tool chain execution. I **always** read the `.agent/rules/` and relevant skills before each new file.
 
-### 4. Audit Phase (`/reviewer`)
-> **You say:** "/reviewer review what has been done so far."
-- **What happens:** The review sub-agent steps in with a critical eye, ensuring the implementation didn't deviate from the original plan and respects the style rules.
+### 4. Audit Phase (Reviewer)
+> **You say:** "Review what has been done so far."
+- **What happens:** The **Reviewer** skill steps in with a critical eye, ensuring the implementation didn't deviate from the original plan and respects the style rules.
 
 ---
 
@@ -41,8 +45,9 @@ To guarantee 100% quality, ask me to follow these phases:
 1.  **Rules are Alive:** If you notice me forgetting something (e.g., "Always use Tailwind"), don't just tell me in the chat. **Ask me to update the corresponding `rules` file.** This makes the learning permanent.
 2.  **Context is King:** Before starting a large task, you can say: "Nexus, read all our rules and workflows before starting." This "warms up" the agent's context.
 3.  **Use `walkthrough.md`:** At the end of each delivery, ask for a walkthrough. It serves as automatic documentation of what was done and how to test it.
-4.  **Feed the Memory:** When I make a mistake, ask me to update `.agent/memory.md`. This creates a self-learning cycle where the same error never happens twice.
-5.  **Leverage Tools:** Create scripts in `.agent/tools/scripts/` for repetitive tasks. Reference them in rules or workflows for automatic execution.
+4.  **Feed the Memory:** When I make a mistake or we reach a significant milestone, ask me to update `.agent/memory.md`. This creates a self-learning cycle where errors are never repeated.
+5.  **Leverage Tools:** Use scripts in `.agent/tools/scripts/` for automation. I check these automatically before manual execution.
+6.  **Autonomous Orchestration (v1.20.5):** You no longer need to use `/` commands. Simply state your goal (e.g., "Nexus, start a new feature"), and I will autonomously coordinate the specialist skills.
 
 ---
 
